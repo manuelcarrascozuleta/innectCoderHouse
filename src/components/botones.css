@@ -1,0 +1,21 @@
+.BotonMas {
+   
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    margin-left: 10px;
+}
+
+.BotonMas:hover {
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #65b1d6;
+    border-radius: 6px;
+    border: 2px solid #28327ed7;
+}

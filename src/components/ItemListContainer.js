@@ -1,5 +1,11 @@
+import React from "react";
+import ItemCount from "./ItemCount";
+
+
 function ItemListContainer(props){
-    return <h1>Servicios de {props.greeting}</h1>
+    return  <div>
+                <ItemCount />
+            </div>
 }
 
 export default ItemListContainer;

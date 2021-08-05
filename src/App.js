@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography'
 import ItemListContainer from './components/ItemListContainer';
 
 
+
 function App() {
 
   return (
@@ -15,7 +16,9 @@ function App() {
       <div className="App-header">
         <NavBar />
       </div>
+      
       <ItemListContainer greeting="Soluciones Digitales"/>
+      
     </ThemeProvider>
     
     
