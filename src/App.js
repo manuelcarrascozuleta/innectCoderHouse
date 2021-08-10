@@ -17,7 +17,7 @@ function App() {
         <NavBar />
       </div>
       
-      <ItemListContainer greeting="Soluciones Digitales"/>
+      <ItemListContainer />
       
     </ThemeProvider>
     

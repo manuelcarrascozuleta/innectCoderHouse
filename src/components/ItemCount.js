@@ -1,25 +1,38 @@
 import React, { useState, useEffect } from "react";
-import Button from "./button"
-import "./botones.css"
-
-export default function ItemCount(props) {
-  const [stock, initial] = useState(1);
+import { AppBar, Toolbar, Typography, makeStyles, IconButton, Button} from "@material-ui/core"
+import MenuIcon from "@material-ui/icons/Menu"
 
 
-  useEffect(() => {
-    console.log("aca soy un componentDidMount", stock);
-    return () => {
-      console.log("esto lo voy a hacer cuando ya no este en el DOM");
-    };
-  }, [stock]);
+export default function ItemCount({stock, initial}) {
+  const [count, setCount] = useState(1)
 
-  console.log("se esta renderizando", new Date());
-  return (
-    <React.Fragment>
-      <h1>Item: {stock}</h1>
-      {props.count2}
-      <Button  text="+" cuandohagoClick={() => initial(stock + 1)} />
-      <Button  text="-" cuandohagoClick={() => initial(stock - 1)} />
-    </React.Fragment>
+
+  function sumar(){
+      if(count < stock){
+          setCount (count + 1)
+      }
+  }
+  
+  function restar(){
+      if(count > 1){
+          setCount (count - 1)
+      }
+  }
+
+  return(
+      <>
+      <h1>Items: {count}</h1>
+      <Button color="primary" variant="contained" onClick={sumar}>+</Button>
+      <Button color="secondary" variant="contained" onClick={restar}>-</Button>
+      </>
   );
 }
+
+
+
+
+
+
+
+
+
