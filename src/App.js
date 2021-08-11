@@ -6,7 +6,7 @@ import theme from "./temaConfig.js"
 import NavBar from './components/NavBar';
 import Typography from '@material-ui/core/Typography'
 import ItemListContainer from './components/ItemListContainer';
-
+import ItemList from './components/ItemList';
 
 
 function App() {
