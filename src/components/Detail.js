@@ -5,7 +5,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
+import ItemDetail from './ItemDetail';
 
 const useStyles = makeStyles({
   root: {
@@ -21,7 +21,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Item(props) {
+export default function Detail(props) {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
@@ -29,11 +29,10 @@ export default function Item(props) {
     <Card className={classes.root}>
       <CardContent>
         <Typography variant="h4" component="h2">
-        {props.prod.name}
+            {props.prod.name}
         </Typography>
         <Typography className={classes.pos}>
-        Precio: 
-        {props.prod.price}
+            {props.prod.img1}
         </Typography>
       </CardContent>
       <hr />

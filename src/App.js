@@ -7,7 +7,7 @@ import NavBar from './components/NavBar';
 import Typography from '@material-ui/core/Typography'
 import ItemListContainer from './components/ItemListContainer';
 import ItemList from './components/ItemList';
-
+import ItemDetailContainer from './components/ItemDetailContainer';
 
 function App() {
 
@@ -16,9 +16,8 @@ function App() {
       <div className="App-header">
         <NavBar />
       </div>
-      
       <ItemListContainer />
-      
+      <ItemDetailContainer />
     </ThemeProvider>
     
     
